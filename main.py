@@ -60,6 +60,7 @@ class Media:
                 if word in post['postText']:
                     self.covid_reactions += post['postStats']['reactions']
                     self.covid_topics += 1
+                    break
 
     def get_info(self):
         return {
